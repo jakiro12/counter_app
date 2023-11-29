@@ -123,7 +123,7 @@ export default landingDesign=StyleSheet.create({
         flexDirection:'column',
     },
     paymentBoxes:{
-        width:'60%',
+        width:'80%',
         height:40,
         display:'flex',
         alignItems:'center',
