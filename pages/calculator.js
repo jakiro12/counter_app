@@ -102,7 +102,7 @@ function TaxCalculator({navigation}){
                 </View>
                 <View style={styles.footerBoxesInformation}>
                     <Text>Importe por persona:</Text>
-                    <Text>$ {(dataUser.userAmount / persons)   +  Math.max(dataUser.userAmount * (percent / 100), dataUser.userAmount * (0.1))}</Text>
+                    <Text>$ {(dataUser.userAmount / persons)   +  (Math.max(dataUser.userAmount * (percent / 100), dataUser.userAmount * (0.1))/persons)}</Text>
                 </View>
                 </View>
                 <TouchableOpacity style={styles.btnSendValues}
