@@ -49,7 +49,7 @@ export default function TaxCalculated(){
                 </View>
                 <View style={styles.paymentBoxes}>
                     <Text>Mi cambio es:</Text>
-                    <Text>{money.paymentAmount - (Number(dataUser.userAmount) +  Math.max(dataUser.userAmount * (percent / 100), dataUser.userAmount * (0.1))) }</Text>
+                    <Text>{money.paymentAmount - ((dataUser.userAmount / persons)   +  (Math.max(dataUser.userAmount * (percent / 100), dataUser.userAmount * (0.1))/persons)) * howMany }</Text>
                 </View>
             </View>
         </View>
