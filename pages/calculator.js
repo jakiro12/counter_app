@@ -8,6 +8,7 @@ import { NewStates } from '../provider/ProviderStatus';
 import AppCounter from '../provider/ProviderStatus';
 import NavBar from './components/DownBar';
 import AboutUs from './aboutUs';
+import PreferencesUser from './preferences';
 
 function TaxCalculator({navigation}){
   const{dataUser,setDataUser,persons,setPersons,percent,setPercent}=useContext(AppCounter)
@@ -129,6 +130,7 @@ function TaxsApp() {
           <Stack.Screen name="Calculate" component={TaxCalculator} />
           <Stack.Screen name="ValuesTo" component={TaxCalculated} />
           <Stack.Screen name="About" component={AboutUs} />
+          <Stack.Screen name="Settings" component={PreferencesUser} />
         </Stack.Navigator>
       </NavigationContainer>
       </NewStates>

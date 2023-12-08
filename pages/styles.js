@@ -146,5 +146,57 @@ export default landingDesign=StyleSheet.create({
     text_about:{
         fontSize:20,
         fontWeight:'bold'
+    },
+    main_about:{
+        width:'95%',
+        height:'15%',
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'space-between',
+    },
+    btn_preferences:{
+        width:150,
+        height:50,
+        backgroundColor:'#0096c7',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    text_preferences:{
+        fontSize:18,
+        color:'#ffffff'
+    },
+    settings_preferences:{
+        height:'100%',
+        width:'100%',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between',
+        backgroundColor:'#dddddd',
+        flexDirection:'column',
+    },
+    box_settings:{
+        width:'90%',
+        height:'30%',
+        backgroundColor:'#5d5d5d',
+        marginTop:'5%',
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'space-around'
+    },
+    setting_boxes:{
+        width:'90%',
+        height:'25%',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between',
+        flexDirection:'row'
+    },
+    input_preferences:{
+        width:'50%',
+        height:'80%',
+        backgroundColor:'#ffffff'
     }
 })
