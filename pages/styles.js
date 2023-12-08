@@ -12,7 +12,7 @@ export default landingDesign=StyleSheet.create({
     },
     headerBox:{
         width:'100%',
-        height:'10%',
+        height:'8%',
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
@@ -35,7 +35,7 @@ export default landingDesign=StyleSheet.create({
     },
     footerBox:{
         width:'95%',
-        height:'40%',
+        height:'35%',
         borderColor:'#000000',
         borderWidth:2,
         display:'flex',
@@ -118,7 +118,7 @@ export default landingDesign=StyleSheet.create({
         width:'100%',
         display:'flex',
         alignItems:'center',
-        justifyContent:'center',
+        justifyContent:'space-between',
         backgroundColor:'#000000',
         flexDirection:'column',
     },
@@ -133,5 +133,18 @@ export default landingDesign=StyleSheet.create({
         borderRadius:5,
         paddingLeft:15,
         paddingRight:15,
+    },
+    about_us:{
+        height:'100%',
+        width:'100%',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between',
+        backgroundColor:'#dddddd',
+        flexDirection:'column',
+    },
+    text_about:{
+        fontSize:20,
+        fontWeight:'bold'
     }
 })

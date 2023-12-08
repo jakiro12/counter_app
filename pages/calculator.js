@@ -3,9 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import styles from './styles';
 import TaxCalculated from './tax_data';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { NewStates } from '../provider/ProviderStatus';
 import AppCounter from '../provider/ProviderStatus';
+import NavBar from './components/DownBar';
+import AboutUs from './aboutUs';
 
 function TaxCalculator({navigation}){
   const{dataUser,setDataUser,persons,setPersons,percent,setPercent}=useContext(AppCounter)
@@ -111,6 +113,7 @@ function TaxCalculator({navigation}){
                     <Text style={styles.textBtnSendValues}>Pagar</Text>
                 </TouchableOpacity>
             </View>
+            <NavBar/>
         </View>
     )
 }
@@ -125,6 +128,7 @@ function TaxsApp() {
         }}>
           <Stack.Screen name="Calculate" component={TaxCalculator} />
           <Stack.Screen name="ValuesTo" component={TaxCalculated} />
+          <Stack.Screen name="About" component={AboutUs} />
         </Stack.Navigator>
       </NavigationContainer>
       </NewStates>

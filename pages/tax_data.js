@@ -2,6 +2,7 @@ import { View , Text, TextInput, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import AppCounter from '../provider/ProviderStatus';
 import { useContext, useState } from 'react';
+import NavBar from './components/DownBar';
 export default function TaxCalculated(){
   const{dataUser,persons,percent}=useContext(AppCounter)
   const [money,setMoney]=useState({
@@ -22,6 +23,9 @@ export default function TaxCalculated(){
   };
     return(
         <View style={styles.containerBill}>
+            <View style={styles.headerBox}>
+                <Text style={styles.headerText}>Calculador de Propinas</Text>
+            </View>
             <View style={styles.mainBox}>
                 <View style={styles.paymentBoxes}>
                     <Text>pago por</Text>
@@ -52,6 +56,7 @@ export default function TaxCalculated(){
                     <Text>{money.paymentAmount - ((dataUser.userAmount / persons)   +  (Math.max(dataUser.userAmount * (percent / 100), dataUser.userAmount * (0.1))/persons)) * howMany }</Text>
                 </View>
             </View>
+            <NavBar/>
         </View>
     )
 }
